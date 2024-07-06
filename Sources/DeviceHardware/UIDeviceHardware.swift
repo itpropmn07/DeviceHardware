@@ -52,7 +52,7 @@ public class UIDeviceHardware: DeviceHardware {
     }
     
     // MARK: -
-    private func getModelIdentifier() -> String? {
+    public func getModelIdentifier() -> String? {
         var size: Int = 0
         sysctlbyname("hw.machine", nil, &size, nil, 0)
         var machine = [CChar](repeating: 0, count: Int(size))
@@ -142,7 +142,7 @@ public class UIDeviceHardware: DeviceHardware {
     }
     
     // MARK: -
-    enum ModelIdentifier: String {
+    public enum ModelIdentifier: String {
         // MARK: Simulator
         case i386
         case x86_64
@@ -840,7 +840,7 @@ public class UIDeviceHardware: DeviceHardware {
         }
         
         // GPU Information
-        func gpu() -> String {
+        public func gpu() -> String {
             switch self {
             /// Simulator
             case .i386, .x86_64, .arm64:
