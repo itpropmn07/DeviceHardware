@@ -935,7 +935,7 @@ public class UIDeviceHardware: DeviceHardware {
                 return "5-core"
             /// iPad Pro (6th)
             /// Apple M2
-            case .iPad14_3_A, .iPad14_3_B, .iPad14_4_A, .iPad14_4_B, .iPad14_5_A, .iPad14_5_B, .iPad14_6_A, .iPad14_6_B, .iPad14_8, .iPad14_9, .iPad14_10, .iPad14_11:
+            case .iPad14_3_A, .iPad14_3_B, .iPad14_4_A, .iPad14_4_B, .iPad14_5_A, .iPad14_5_B, .iPad14_6_A, .iPad14_6_B:
                 return "10-core"
             case .iPad14_8, .iPad14_9, .iPad14_10, .iPad14_11:
                 return "9-core"
