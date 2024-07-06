@@ -100,7 +100,7 @@ public class UIDeviceHardware: DeviceHardware {
         return modelId.cpu()
     }
     
-    public func getGpu() -> String? {
+    private func getGpu() -> String? {
         if #available(OSX 10.11, iOS 8.0, macCatalyst 13.0, *) {
             return getMetalGpu()
         } else {
