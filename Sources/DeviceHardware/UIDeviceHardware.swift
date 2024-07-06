@@ -937,6 +937,8 @@ public class UIDeviceHardware: DeviceHardware {
             /// Apple M2
             case .iPad14_3_A, .iPad14_3_B, .iPad14_4_A, .iPad14_4_B, .iPad14_5_A, .iPad14_5_B, .iPad14_6_A, .iPad14_6_B, .iPad14_8, .iPad14_9, .iPad14_10, .iPad14_11:
                 return "10-core"
+            case .iPad14_8, .iPad14_9, .iPad14_10, .iPad14_11:
+                return "9-core"
             /// iPhone 15 Pro/15 Pro Max
             /// Apple A17 Pro
             case .iPhone16_1, .iPhone16_2:
