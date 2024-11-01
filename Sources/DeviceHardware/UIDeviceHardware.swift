@@ -449,7 +449,7 @@ public class UIDeviceHardware: DeviceHardware {
         func modelName() -> String {
             switch self {
             case .i386, .x86_64, .arm64:
-                return "Simulator"
+                return "N/A"
             case .iPod1_1:
                 return "iPod touch (1st generation)"
             case .iPod2_1:
